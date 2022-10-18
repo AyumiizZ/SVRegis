@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import HomeView from "@/views/HomeView.vue";
 import SignInView from "@/views/SignInView.vue";
 import ComingSoonView from "@/views/ComingSoonView.vue";
+import DomainView from "@/views/Register/DomainView.vue";
 
 Vue.use(VueRouter);
 
@@ -44,7 +45,7 @@ const routes = [
   {
     path: "/domain-regis",
     name: "domain-regis",
-    component: ComingSoonView,
+    component: DomainView,
   },
   {
     path: "/host-req",
