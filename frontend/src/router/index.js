@@ -1,7 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import HomeView from "../views/HomeView.vue";
-import SignInView from "../views/SignInView.vue";
+import HomeView from "@/views/HomeView.vue";
+import SignInView from "@/views/SignInView.vue";
+import ComingSoonView from "@/views/ComingSoonView.vue";
 
 Vue.use(VueRouter);
 
@@ -24,6 +25,36 @@ const routes = [
     path: "/signin",
     name: "signin",
     component: SignInView,
+  },
+  {
+    path: "/applicant",
+    name: "applicant",
+    component: ComingSoonView,
+  },
+  {
+    path: "/responsible",
+    name: "responsible",
+    component: ComingSoonView,
+  },
+  {
+    path: "/approver",
+    name: "approver",
+    component: ComingSoonView,
+  },
+  {
+    path: "/domain-regis",
+    name: "domain-regis",
+    component: ComingSoonView,
+  },
+  {
+    path: "/host-req",
+    name: "host-req",
+    component: ComingSoonView,
+  },
+  {
+    path: "/host-regis",
+    name: "host-regis",
+    component: ComingSoonView,
   },
 ];
 
