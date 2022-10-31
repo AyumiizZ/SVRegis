@@ -24,3 +24,19 @@ async def add(records):
     for i in data['data']:
         print(i)
         return {"message": "Hello World"}
+
+@app.get("list-domain")
+async def list():
+    return {"message": "Hello World"}
+
+@app.get("/signin")
+async def list():
+    return {"message": "Hello World"}
+  
+@app.get("/signout")
+async def list():
+    return {"message": "Hello World"}
+
+@app.get("/search")
+async def list():
+    return {"message": "Hello World"}
